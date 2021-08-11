@@ -1,0 +1,10 @@
+---
+applications:
+- name: egov-simple
+  memory: 1024M
+  instances: 1
+  buildpack: https://github.com/youngjinj/egov-buildpack-v3.9.git
+  env:
+    JBP_CONFIG_COMPONENTS: '[containers: Tomcat]'
+  host: egov-simple
+  domain: paas-ta.org
